@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UtF-8" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Web App</title>
+  </head>
+
+  <body>
+    <h1>Book Store</h1>
+
+    <input type="text" id="search-products" placeholder="Search . . ." />
+
+    <label> <input type="checkbox" id="available-products" /> Check To Show Available Products </label>
+
+    <select id="sort">
+      <option value="byEdited">By Edited</option>
+      <option value="byCreated">By Created</option>
+    </select>
+
+    <div id="products"></div>
+
+    <br />
+
+    <form id="add-product-form">
+      <input type="text" name="productTitle" placeholder="Add Product + " autocomplete="off" />
+      <input type="text" name="productPrice" placeholder="Add Price + " autocomplete="off" />
+      <button>Add Product</button>
+    </form>
+
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/jalali-moments.js"></script>
+    <script src="scripts/uuid.js"></script>
+    <script src="scripts/functions.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
